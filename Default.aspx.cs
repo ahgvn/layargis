@@ -56,7 +56,7 @@ public partial class _Default : System.Web.UI.Page
             // REST ophalen
 
             string json = GetREST();
-            AGSpunt punt = JsonConvert.DeserializeObject<AGSpunt>(json);
+            AGSpoint punt = JsonConvert.DeserializeObject<AGSpoint>(json);
 
             // van AGSpunt naar POI
 

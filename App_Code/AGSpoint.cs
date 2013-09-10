@@ -9,7 +9,7 @@ using System.Collections.Specialized;
 /// <summary>
 /// Summary description for AGSpunt
 /// </summary>
-public class AGSpunt
+public class AGSpoint
 {
     private string _displayFieldName;
     private string _geometryType;
@@ -18,7 +18,7 @@ public class AGSpunt
     private List<AGSfeature> _features;
     private List<AGSfield> _fields;
 
-	public AGSpunt()
+	public AGSpoint()
 	{
         _displayFieldName = "";
         _geometryType = "";
