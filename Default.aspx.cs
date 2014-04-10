@@ -15,7 +15,7 @@ using System.Configuration;
 
 public partial class _Default : System.Web.UI.Page
 {
-    private readonly static string ServiceUrl = ConfigurationManager.AppSettings["ags"] + "/query?geometryType=esriGeometryPoint&where=id+>+-1&returnCountOnly=false&returnIdsOnly=false&returnGeometry=true&outFields=*&f=pjson";
+    // private readonly static string ServiceUrl = ConfigurationManager.AppSettings["ags"] + "/query?geometryType=esriGeometryPoint&where=id+>+-1&returnCountOnly=false&returnIdsOnly=false&returnGeometry=true&outFields=*&f=pjson";
     private clsLogger logger;
 
     protected void Page_Load(object sender, EventArgs e)
@@ -28,7 +28,7 @@ public partial class _Default : System.Web.UI.Page
 
         try
         {
-
+            // a small change
             // Querystring ophalen, http://localhost:1867/LayarPOI/?lat=51.824732&lon=5.82530&radius=3000
             decimal lat = 0;
             decimal lon = 0;
@@ -81,7 +81,7 @@ public partial class _Default : System.Web.UI.Page
     public static string GetREST()
     {
         string formattedUri = String.Format(CultureInfo.InvariantCulture,
-                              ServiceUrl);
+                              Helper.ServiceURL + "/query?geometryType=esriGeometryPoint&where=id+>+-1&returnCountOnly=false&returnIdsOnly=false&returnGeometry=true&outFields=*&f=pjson");
 
         HttpWebRequest webRequest = GetWebRequest(formattedUri);
         HttpWebResponse response = (HttpWebResponse)webRequest.GetResponse();

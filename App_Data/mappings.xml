@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Mappings>
+  <ServiceURL>http://services.arcgis.com/zmBQLV64TsFvEpV0/arcgis/rest/services/LayarPOIs/FeatureServer/0</ServiceURL>
+  <AttributeMappings>
+    <ID>id</ID>
+    <Title>titel_en</Title>
+  </AttributeMappings>
+</Mappings>

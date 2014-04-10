@@ -7,7 +7,7 @@ using System.Collections.Specialized;
 
 
 /// <summary>
-/// Summary description for AGSpunt
+/// Summary description for AGSpoint
 /// </summary>
 public class AGSpoint
 {
