@@ -28,7 +28,7 @@ public partial class _Default : System.Web.UI.Page
 
         try
         {
-            // a small change
+            // another small change
             // Querystring ophalen, http://localhost:1867/LayarPOI/?lat=51.824732&lon=5.82530&radius=3000
             decimal lat = 0;
             decimal lon = 0;
